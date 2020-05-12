@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <h1>Library</h1>
+    <h2>Please enter book you would like to add to the Library:</h2>
+    <form>
+      <input id="title" type="text" placeholder="Enter book title" />
+      <input id="author" type="author" placeholder="Enter author name" />
+      <input id="pages" type="number" placeholder="Enter number of pages" />
+      <select id="read">
+        <option value="false">False</option>
+        <option value="true">True</option>
+      </select>
+      <input type="button" value="Save" onclick="addBookToLibrary()" />
+    </form>
+    <div id="display"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
