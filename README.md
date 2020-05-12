@@ -1,4 +1,4 @@
-# library
+# Personal Library
 
 A personal library to add books to.
 
