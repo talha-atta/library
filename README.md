@@ -1,3 +1,3 @@
 # library
 
-A community library to add books to.
+A personal library to add books to.
