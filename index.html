@@ -2,26 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Library</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/main.css" />
+    <title>Library</title>
   </head>
   <body>
-    <h1>Library</h1>
-    <h2>Please enter book you would like to add to the Library:</h2>
-    <form>
-      <input id="title" type="text" placeholder="Enter book title" />
-      <input id="author" type="author" placeholder="Enter author name" />
-      <input id="pages" type="number" placeholder="Enter number of pages" />
-      <select id="read">
-        <option value="false">False</option>
-        <option value="true">True</option>
-      </select>
-      <input type="button" value="Save" onclick="addBookToLibrary()" />
-    </form>
-    <div id="display"></div>
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Add New Book</h2>
+        <div class="form-control">
+          <input type="text" name="title" id="title" />
+          <label for="title">Title</label>
+        </div>
+        <div class="form-control">
+          <input type="text" name="author" id="author" />
+          <label for="author">Author</label>
+        </div>
+        <div class="form-control">
+          <input type="number" name="pages" id="pages" />
+          <label for="pages">Pages</label>
+        </div>
+        <div class="form-control">
+          <select name="status" id="status">
+            <option value="Read">Read</option>
+            <option value="Unread">Unread</option>
+          </select>
+          <label>Status</label>
+        </div>
+        <div class="modal-buttons">
+          <button class="clear" id="cancel-btn">Cancel</button>
+          <button class="add" id="add-btn">Add Book</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Library</h1>
+
+      <div class="buttons">
+        <button class="clear" id="clear-btn">Clear All</button>
+        <button class="add" id="modal-btn">Add New Book</button>
+      </div>
+
+      <div class="books"></div>
+
+      <h3 class="msg">No books have been added yet.</h3>
+    </div>
+
+    <div class="twitter">
+      <p>
+        Built by
+        <a href="https://twitter.com/talha_atta6" target="_blank">Talha Atta</a>
+      </p>
+    </div>
+
     <script src="js/index.js"></script>
   </body>
 </html>
