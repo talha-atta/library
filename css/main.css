@@ -13,7 +13,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #222831;
+  background-color: #181529;
   color: #eeeeee;
   font-family: 'Open Sans', sans-serif;
   display: flex;
@@ -81,7 +81,7 @@ input:focus {
 }
 
 label {
-  color: #222831;
+  color: #181529;
   opacity: .75;
   font-size: 1rem;
   top: -22px;
